@@ -1,0 +1,41 @@
+﻿@model CCCalc.Models.CaclModel
+
+@{
+    ViewBag.Title = "Calculation Results";
+}
+
+<h2>CalcResult</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("First Value")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numOne)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Second Value")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numTwo)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Calculation Result")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numRes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    @Html.ActionLink("Start Over", "Index")
+</p>

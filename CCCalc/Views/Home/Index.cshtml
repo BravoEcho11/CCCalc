@@ -1,0 +1,26 @@
+﻿@model CCCalc.Models.CaclModel
+@{
+    ViewBag.Title = "CC Calculator";
+}
+
+<h2></h2>
+
+
+@using (Html.BeginForm("CalcResult", "Home", FormMethod.Post))
+{
+
+    <dt>
+        @Html.Label("First value")
+    </dt>
+    <dd>
+        @Html.TextBoxFor(model => model.numOne)
+    </dd>
+    <dt>
+        @Html.Label("Second value")
+    </dt>
+    <dd>
+        @Html.TextBoxFor(model => model.numTwo)
+    </dd>
+
+    <input type="submit" id="btnSum" value="Add Values" />
+    }

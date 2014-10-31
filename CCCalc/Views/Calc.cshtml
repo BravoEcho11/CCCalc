@@ -1,0 +1,42 @@
+﻿@model CCCalc.Models.ViewModel
+
+@{
+    ViewBag.Title = "Calc";
+}
+
+<h2>Calc</h2>
+
+<div>
+    <h4>ViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Result)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Result)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.opOne)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.opOne)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.opTwo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.opTwo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
